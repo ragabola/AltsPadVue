@@ -8,12 +8,15 @@ import { faCalendar } from '@fortawesome/free-solid-svg-icons'
 import { faCopy } from '@fortawesome/free-solid-svg-icons'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faCalendar)
 library.add(faCopy)
 library.add(faAngleDown)
 library.add(faAngleUp)
+library.add(faSearch)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false;
 

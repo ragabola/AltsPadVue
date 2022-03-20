@@ -1,9 +1,12 @@
 @import "./global/global";
 @import "./global/headings";
 @import "./components/btns";
+@import "./components/banner";
 @import "./components/header";
-@import "./views/landing-sec1";
-@import "./views/landing-sec2";
-@import "./views/landing-sec3";
-@import "./views/landing-sec4";
+@import "./views/landing/landing-sec1";
+@import "./views/landing/landing-sec2";
+@import "./views/landing/landing-sec3";
+@import "./views/landing/landing-sec4";
+@import "./views/pools/pools";
+@import "./views/pools/pool";
 @import "./components/footer";

@@ -1,0 +1,57 @@
+div.pools {
+  margin-top: 130px;
+  padding-bottom: 50px;
+  section {
+    .container {
+      .head {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div {
+          &:first-child {
+            a.active {
+              background-color: var(--compl-2);
+            }
+          }
+          &:nth-child(2) {
+            position: relative;
+            input.search {
+              background: none;
+              border: 0;
+              width: 225px;
+              outline: 2px solid var(--compl-2);
+              padding: 12px 55px;
+              font-size: 16px;
+              border-radius: 11px;
+              color: var(--dominant-wmode-color);
+              -webkit-border-radius: 11px;
+              -moz-border-radius: 11px;
+              -ms-border-radius: 11px;
+              -o-border-radius: 11px;
+              font-weight: 500;
+              &::placeholder {
+                color: var(--compl-2);
+                font-weight: bold;
+              }
+            }
+            svg {
+              margin-right: 10px;
+              font-size: 21px;
+              color: var(--compl-2);
+              padding: 10px;
+              position: absolute;
+              left: 5px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+      div.body {
+        margin-top: 40px;
+        color: white;
+      }
+    }
+  }
+}

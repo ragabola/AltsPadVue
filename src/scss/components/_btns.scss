@@ -40,3 +40,14 @@
     -ms-transition: background-color .33s ease;
     -o-transition: background-color .33s ease;
 }
+#badge{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 4px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-right:10px;
+}
