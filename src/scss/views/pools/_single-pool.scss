@@ -289,11 +289,13 @@ div.single-pool {
         a {
           background-color: var(--compl-2);
           user-select: auto;
-          display: block;
-          margin-left: auto;
-          width: fit-content;
-          margin-right: auto;
-          margin-top: 30px;
+          color: var(--dominant-bmode-color) !important;
+          display: block !important;
+          margin-left: auto !important;
+          width: fit-content !important;
+          margin-right: auto !important;
+          margin-top: 30px !important;
+          font-weight: bold !important;
         }
       }
     }
