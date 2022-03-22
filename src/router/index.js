@@ -3,8 +3,8 @@ import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import PoolsView from "../views/PoolsView.vue";
 import StackView from "../views/StackView.vue";
-import CalendarView from "../views/CalendarView.vue";
 import FarmView from "../views/FarmView.vue";
+import SinglePool from "../views/SinglePool.vue";
 
 Vue.use(VueRouter);
 
@@ -28,21 +28,21 @@ const routes = [
     }
   },
   {
+    path: "/pool/:id",
+    name: "pool",
+    component: SinglePool,
+    meta: {
+      title: "Pool",
+      icon:"require('@/assets/images/logo.png')" 
+    }
+  },
+  {
     path: "/stack",
     name: "stack",
     component: StackView,
     meta: {
       title: "Stack",
       icon:"require('@/assets/images/logo.png')" 
-    }
-  },
-  {
-    path: "/calendar",
-    name: "calendar",
-    component: CalendarView,
-    meta: {
-      title: "Calendar",
-      icon:"require('@/assets/images/logo.png')"
     }
   },
   {

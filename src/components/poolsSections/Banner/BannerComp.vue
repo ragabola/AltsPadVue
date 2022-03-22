@@ -5,7 +5,7 @@
       <BannerItem
         v-for="pool in pools"
         v-bind:key="pool.id"
-        :link="pool.id"
+        :PoolID="pool.id"
         :src="pool.image"
         :name="pool.name"
         :number="pool.xNumber"

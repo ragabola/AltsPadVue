@@ -17,6 +17,7 @@
     -moz-transition: background-color .33s ease;
     -ms-transition: background-color .33s ease;
     -o-transition: background-color .33s ease;
+    box-shadow: 0px 0px 10px var(--compl-2);
     font-size: 15px;
 }
 #btn-2{
@@ -39,6 +40,8 @@
     -moz-transition: background-color .33s ease;
     -ms-transition: background-color .33s ease;
     -o-transition: background-color .33s ease;
+    box-shadow: 0px 0px 10px var(--compl-1);
+
 }
 #badge{
     border-radius: 15px;

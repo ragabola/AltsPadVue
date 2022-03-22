@@ -1,5 +1,5 @@
 <template>
-  <router-link class="item" to="farm" tag="div">
+  <router-link class="item" :to="'/pool/' + PoolID" tag="div">
     <img :src="src" alt="" />
     <div class="text">
       <p>{{ name }}</p>
@@ -15,6 +15,7 @@ export default {
     number: String,
     name: String,
     link: String,
+    PoolID: Number,
   },
 };
 </script>

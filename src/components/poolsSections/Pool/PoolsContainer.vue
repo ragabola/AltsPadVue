@@ -36,6 +36,7 @@
             :listed="pool.listedBadge"
             :private="pool.privateBadge"
             :upcoming="pool.upcomingBadge"
+            :filled="pool.filledBadge"
             :endedBadge="pool.endedBadge"
             :Pdesc="pool.poolDesc"
             :Praise="pool.raise"

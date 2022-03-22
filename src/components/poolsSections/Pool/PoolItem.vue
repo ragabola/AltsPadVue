@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/farm">
+  <router-link :to="'/pool/' + PoolID">
     <div class="item">
       <div class="user-data">
         <div class="row">
@@ -151,7 +151,7 @@
         <p class="one-x">
           1x (approx) = <span>{{ xPrice }}$</span>
           <router-link
-            to="/farm"
+            :to="'/pool/' + PoolID"
             style="
               color: var(--dominant-bmode-color);
               font-weight: bold;
@@ -170,7 +170,6 @@
 </template>
 
 <script>
-// "'/' + PoolID"
 import BadgeComp from "@/components/BadgeComp.vue";
 export default {
   name: "PoolItem",
