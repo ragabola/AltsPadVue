@@ -188,7 +188,7 @@ div.single-pool {
         &.active {
           background-color: var(--compl-2);
           color: var(--dominant-bmode-color) !important;
-          font-weight: bold;
+          font-weight: bold !important;
         }
       }
     }
