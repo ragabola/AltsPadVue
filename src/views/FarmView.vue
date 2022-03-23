@@ -1,7 +1,7 @@
 <template>
   <div class="farm">
     <div class="container">
-      <h2>Farm</h2>
+      <h1>Farm</h1>
       <div class="flex-farm">
         <FarmItem
           :image="require('@/assets/images/pools/profile-img1.png')"
