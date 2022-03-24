@@ -443,7 +443,7 @@ export default new Vuex.Store({
         image: require('@/assets/images/pools/animalialogo.600f849a.jpg'),
         twitter: "https://twitter.com/",
         telegram: "https://web.telegram.org/",
-        showterra : true,
+        showterra: true,
         medium: "#",
         subtitle: "PRIDE / BUSD",
         website: "#",
@@ -1005,6 +1005,9 @@ export default new Vuex.Store({
     getTargetPool(state) {
       return "hello";
     },
+    moveUp() {
+      window.scrollTo(0, 0);
+    }
   },
   actions: {},
   modules: {},

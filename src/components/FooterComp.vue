@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <UpBtn />
     <div class="container">
       <div class="row">
         <h1 class="logo">
@@ -113,10 +114,12 @@
 </template>
 <script>
 import BtnComp from "@/components/BtnComp.vue";
+import UpBtn from "@/components/UpBtn.vue";
 export default {
   name: "FooterComp",
   components: {
     BtnComp,
+    UpBtn
   },
 };
 </script>
