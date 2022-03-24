@@ -1,5 +1,5 @@
 <template>
-  <section class="FAQ">
+  <section class="FAQ" id="faq">
     <div class="container">
       <p class="heading-1">
         Qs<span>FA</span>

@@ -35,12 +35,12 @@
       <h2>Launching hand-picked high-quality projects on the Blockchain.</h2>
       <p>Stake TrustPad tokens to get early-access to promising projects.</p>
       <div>
-        <BtnComp
-          link="#"
+        <router-link
+          to="/pools"
           id="btn-2"
-          text="Launch Now"
           style="background-color: var(--compl-1)"
-        />
+          >Launch App</router-link
+        >
 
         <BtnComp
           link="#"
@@ -81,14 +81,14 @@ export default {
       text: "0xADCFC6bf853a0a8ad7f9Ff4244140D10cf01363C",
     };
   },
-  methods:{
+  methods: {
     toggle: function (event) {
-      this.copy = !this.copy
-      var inp =document.createElement('input');
-      document.body.appendChild(inp)
-      inp.value =this.text
+      this.copy = !this.copy;
+      var inp = document.createElement("input");
+      document.body.appendChild(inp);
+      inp.value = this.text;
       inp.select();
-      document.execCommand('copy',false);
+      document.execCommand("copy", false);
       inp.remove();
     },
   },

@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <p class="heading-1">
         OUT<span>AB</span>

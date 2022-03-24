@@ -1,11 +1,25 @@
 div.single-pool {
   margin-top: 130px;
   padding-bottom: 50px;
+  .wallet{
+    margin-top: 15px;
+    button{
+      margin-left: 0px !important;
+    }
+  }
+  .walletBtns {
+    flex-direction: row;
+    a{
+      display: flex !important;
+      margin-left: 10px !important;
+      color: var(--dominant-wmode-color) !important;
+    }
+  }
   .info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width:700px) {
+    @media (max-width: 700px) {
       flex-direction: column;
     }
     .left {
@@ -13,7 +27,7 @@ div.single-pool {
       box-shadow: 0px 0px 8px var(--compl-2);
       padding: 35px 20px;
       border-radius: 50px;
-      @media (max-width:700px) {
+      @media (max-width: 700px) {
         width: 100%;
       }
       .img-name {
@@ -139,7 +153,7 @@ div.single-pool {
       padding: 15px 20px;
       box-shadow: 0px 0px 11px var(--compl-2);
       border-radius: 30px;
-      @media (max-width:700px) {
+      @media (max-width: 700px) {
         width: 100%;
         margin-top: 25px;
       }
@@ -211,7 +225,7 @@ div.single-pool {
         justify-content: space-evenly;
         align-items: flex-start;
         .item {
-          @media (max-width:450px) {
+          @media (max-width: 450px) {
             width: 100%;
             min-width: unset;
             max-width: unset;

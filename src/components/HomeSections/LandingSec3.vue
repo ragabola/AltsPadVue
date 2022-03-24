@@ -1,5 +1,5 @@
 <template>
-  <section class="levels">
+  <section class="levels" id="levels">
     <div class="container">
       <p class="heading-1">
         VELS<span>LE</span
@@ -7,12 +7,12 @@
       </p>
       <div class="launch">
         <h2>AltsPAD Levels</h2>
-        <BtnComp
-          link="#"
+        <router-link
+          to="/pools"
           id="btn-2"
-          text="Launch App"
           style="background-color: var(--compl-1)"
-        />
+          >Launch App</router-link
+        >
       </div>
       <main>
         <div class="cont">

@@ -106,12 +106,53 @@
             <span>1 BUSD = 50 ADR</span>
             <span>1 ADR = 0.02 BUSD</span>
           </div>
-          <BtnComp
-            link="#"
-            id="btn-1"
-            text="Connect Wallet"
-            style="background-color: var(--compl-2)"
-          />
+          <div class="wallet">
+            <button
+              @click.prevent="toggle($event)"
+              id="btn-1"
+              style="
+                background-color: var(--compl-2);
+                font-weight: bold;
+                color: var(--dominant-wmode-color);
+              "
+            >
+              Wallet Connect
+              <font-awesome-icon
+                :icon="['fas', 'fa-angle-down']"
+                v-show="!active"
+              />
+              <font-awesome-icon
+                :icon="['fas', 'fa-angle-up']"
+                v-show="active"
+              />
+            </button>
+            <div class="walletBtns" :class="active == true ? 'active' : ''">
+              <a
+                :class="active == true ? 'active' : ''"
+                id="btn-1"
+                style="background-color: #f6851b; width: 100%"
+                a
+                >Install MetaMask
+                <img :src="require('@/assets/images/metamask.svg')"
+              /></a>
+              <a
+                :class="active == true ? 'active' : ''"
+                id="btn-1"
+                style="background-color: #024d9c; width: 100%"
+                a
+                >Wallet Connect
+                <img :src="require('@/assets/images/wallet.svg')"
+              /></a>
+              <a
+                :class="active == true ? 'active' : ''"
+                id="btn-1"
+                style="background-color: #3274bb; width: 100%"
+                a
+                >Trust Wallet
+                <img :src="require('@/assets/images/trustwallet.svg')"
+              /></a>
+            </div>
+          </div>
         </div>
         <div class="right">
           <h4>Pool Progress</h4>
@@ -249,6 +290,7 @@ export default {
       poolDetails: true,
       Schedule: false,
       Allocation: false,
+      active: false,
     };
   },
   methods: {
@@ -282,6 +324,9 @@ export default {
       this.poolDetails = false;
       this.Schedule = false;
       this.Allocation = true;
+    },
+    toggle: function (event) {
+      this.active = !this.active;
     },
   },
 };

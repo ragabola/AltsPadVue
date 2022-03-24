@@ -73,9 +73,9 @@
       <div class="cont">
         <div class="gr">
           <h4>General</h4>
-          <a class="link" href="#">Levels Staking</a
-          ><a class="link" href="#">Apply For IDO</a
-          ><a class="link" href="#">Farm</a><a class="link" href="#">Pool</a
+          <a class="link" href="/#levels">Levels Staking</a
+          ><a class="link" href="/pools">Apply For IDO</a
+          ><a class="link" href="/farm">Farm</a><a class="link" href="/pools">Pool</a
           ><a class="link" href="#">Privcy Policy</a
           ><a class="link" href="#">Terms of use</a>
         </div>
@@ -90,8 +90,8 @@
         <div class="gr">
           <h4>Help</h4>
           <a class="link" href="#">How to participate in IDO</a
-          ><a class="link" href="#">FAQ</a
-          ><a class="link" href="#">About TPAD redistribution fee</a>
+          ><a class="link" href="/#faq">FAQ</a
+          ><a class="link" href="/#about">About APAD redistribution fee</a>
         </div>
         <div class="gr">
           <h4>Token</h4>
@@ -103,10 +103,9 @@
         <div class="gr">
           <h4>Audits</h4>
           <a class="link" href="#"
-            ><img :src="require('@/assets/images/footer.svg')" /></a
+            >Soon</a
           ><a class="link" href="#"
-            ><img :src="require('@/assets/images/footer-3.png')"
-          /></a>
+            >Soon</a>
         </div>
       </div>
     </div>
