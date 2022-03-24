@@ -8,10 +8,10 @@
       >
     </h1>
     <ul :class="open == true ? 'active' : ''">
-      <li><router-link to="/" exact>Home</router-link></li>
-      <li><router-link to="/pools">Pools</router-link></li>
-      <li><router-link to="/stack">Stack</router-link></li>
-      <li><router-link to="/farm">Farm</router-link></li>
+      <li @click.prevent="menu($event)"><router-link to="/" exact>Home</router-link></li>
+      <li @click.prevent="menu($event)"><router-link to="/pools">Pools</router-link></li>
+      <li @click.prevent="menu($event)"><router-link to="/stack">Stack</router-link></li>
+      <li @click.prevent="menu($event)"><router-link to="/farm">Farm</router-link></li>
       <div style="display: flex">
         <BtnComp
           id="btn-1"
@@ -62,7 +62,7 @@
         </div>
       </div>
     </ul>
-    <div id="nav-icon1" @click.prevent="menu($event)">
+    <div id="nav-icon1" @click.prevent="menu($event)" :class="open == true ? 'open' : ''">
       <span></span>
       <span></span>
       <span></span>
@@ -88,7 +88,7 @@ export default {
       this.active = !this.active;
     },
     menu: function (event) {
-      event.currentTarget.classList.toggle("open");
+      // event.currentTarget.classList.toggle("open");
       this.open = !this.open;
     },
   },
