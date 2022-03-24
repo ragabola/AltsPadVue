@@ -24,7 +24,7 @@ export default {
     },
     onScroll(e) {
       window.top.scrollY;
-      if (window.top.scrollY > 1000) {
+      if (window.top.scrollY > 600) {
         this.windowTop = true;
       }else{
           this.windowTop = false;
