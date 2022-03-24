@@ -4,17 +4,28 @@ section.levels {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    @media (max-width: 500px) {
+      & {
+        align-items: center;
+        flex-direction: column;
+      }
+    }
     h2 {
       margin-top: 30px;
       font-size: 36px;
       color: var(--dominant-wmode-color);
-      @media (max-width:700px) {
-        font-size: 25px;
+      @media (max-width: 700px) {
+        font-size: 32px;
+      }
+      @media (max-width: 500px) {
+        & {
+          margin-bottom: 15px;
+        }
       }
     }
-    a{
-        font-size: 18px !important;
-        color: var(--dominant-bmode-color) !important;
+    a {
+      font-size: 18px !important;
+      color: var(--dominant-bmode-color) !important;
     }
   }
   main {
