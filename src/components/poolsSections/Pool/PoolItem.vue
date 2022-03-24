@@ -3,10 +3,6 @@
     <div class="item">
       <div class="user-data">
         <div class="row">
-          <div class="left">
-            <h3>{{ Pname }}</h3>
-            <p>{{ Pusername }}</p>
-          </div>
           <div class="image">
             <img :src="Imagesrc" class="profile-img" />
             <img
@@ -14,7 +10,63 @@
               v-show="Showspecial"
               class="special"
             />
-            <span class="fire" v-show="Showfire">🔥</span>
+            <img
+              :src="require('@/assets/images/polygon.svg')"
+              v-show="Showpolygon"
+              class="special"
+            />
+            <img
+              :src="require('@/assets/images/solana.png')"
+              v-show="Showsolana"
+              class="special"
+            />
+            <img
+              :src="require('@/assets/images/terra.png')"
+              v-show="Showterra"
+              class="special"
+            />
+            <img
+              :src="require('@/assets/images/ledgity.jpg')"
+              v-show="Showledgity"
+              class="special"
+            />
+          </div>
+          <div class="left">
+            <h3>{{ Pname }}</h3>
+            <p>{{ Pusername }}</p>
+          </div>
+          <div class="bscan">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 121.378 121.333"
+                class="h-6 w-6"
+              >
+                <g
+                  id="bscscan-logo-light-circle"
+                  transform="translate(-219.378 -213.334)"
+                >
+                  <path
+                    d="M244.6,271.1a5.144,5.144,0,0,1,5.168-5.143l8.568.028a5.151,5.151,0,0,1,5.151,5.151v32.4c.965-.286,2.2-.591,3.559-.911a4.292,4.292,0,0,0,3.309-4.177V258.261a5.152,5.152,0,0,1,5.151-5.152H284.1a5.152,5.152,0,0,1,5.151,5.152v37.3s2.15-.87,4.243-1.754a4.3,4.3,0,0,0,2.625-3.957V245.383a5.151,5.151,0,0,1,5.15-5.151h8.585A5.151,5.151,0,0,1,315,245.383V282c7.443-5.394,14.986-11.882,20.972-19.683a8.646,8.646,0,0,0,1.316-8.072,60.636,60.636,0,1,0-109.855,50.108,7.668,7.668,0,0,0,7.316,3.79c1.624-.143,3.646-.345,6.05-.627a4.29,4.29,0,0,0,3.805-4.258V271.1"
+                    fill="#fff"
+                  ></path>
+                  <path
+                    d="M244.417,323.061A60.656,60.656,0,0,0,340.756,274c0-1.4-.065-2.778-.158-4.152-22.163,33.055-63.085,48.508-96.181,53.213"
+                    fill="#f0b90b"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+            <a href="">
+              <img
+                :src="require('@/assets/images/etherscan.png')"
+              />
+            </a>
+            <a href="">
+              <img
+                :src="require('@/assets/images/ftmscan.png')"
+              />
+            </a>
           </div>
         </div>
         <p class="social">
@@ -188,6 +240,10 @@ export default {
     Imagesrc: String,
     Showfire: Boolean,
     Showspecial: Boolean,
+    Showpolygon: Boolean,
+    Showsolana: Boolean,
+    Showterra: Boolean,
+    Showledgity: Boolean,
     TwitterSrc: String,
     TelegramSrc: String,
     MediumSrc: String,

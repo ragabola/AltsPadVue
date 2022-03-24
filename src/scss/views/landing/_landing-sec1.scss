@@ -83,6 +83,7 @@ section.intro {
       display: inline-block;
       margin-top: 20px;
       color: var(--dominant-bmode-color);
+      font-size: 18px;
       &:first-child {
         margin-left: 0;
       }
@@ -93,8 +94,9 @@ section.intro {
         padding: 8px 10px;
         border-color: var(--compl-1);
         color: var(--dominant-wmode-color);
-        font-size: 12px;
+        font-size: 13px;
         font-weight: bold;
+        box-shadow: 0px 0px 0px;
         &:hover {
           background-color: var(--compl-1);
         }

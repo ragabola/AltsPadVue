@@ -54,11 +54,15 @@
           <BtnComp link="#" id="btn-1" text="Buy APad" />
         </div>
         <div class="extra-2">
-          <p class="copy" @click="copy = !copy" :style="{'display':copy ? 'flex' : 'none'}">
-            0xADCFC6bf853a0a8ad7f9Ff4244140D10cf01363C
+          <p
+            class="copy"
+            @click="toggle($event)"
+            :style="{ display: copy ? 'flex' : 'none' }"
+          >
+            {{ text }}
             <font-awesome-icon :icon="['fas', 'fa-copy']" />
           </p>
-          <p class="copied" :style="{'display':copy ? 'none' : 'flex'}">
+          <p class="copied" :style="{ display: copy ? 'none' : 'flex' }">
             Copied<font-awesome-icon :icon="['fas', 'fa-copy']" />
           </p>
         </div>
@@ -74,7 +78,19 @@ export default {
   data() {
     return {
       copy: true,
+      text: "0xADCFC6bf853a0a8ad7f9Ff4244140D10cf01363C",
     };
+  },
+  methods:{
+    toggle: function (event) {
+      this.copy = !this.copy
+      var inp =document.createElement('input');
+      document.body.appendChild(inp)
+      inp.value =this.text
+      inp.select();
+      document.execCommand('copy',false);
+      inp.remove();
+    },
   },
   components: {
     BtnComp,
