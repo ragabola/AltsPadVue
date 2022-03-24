@@ -5,11 +5,17 @@ div.single-pool {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width:700px) {
+      flex-direction: column;
+    }
     .left {
       width: 55%;
       box-shadow: 0px 0px 8px var(--compl-2);
       padding: 35px 20px;
       border-radius: 50px;
+      @media (max-width:700px) {
+        width: 100%;
+      }
       .img-name {
         display: flex;
         align-items: center;
@@ -133,6 +139,10 @@ div.single-pool {
       padding: 15px 20px;
       box-shadow: 0px 0px 11px var(--compl-2);
       border-radius: 30px;
+      @media (max-width:700px) {
+        width: 100%;
+        margin-top: 25px;
+      }
       h4 {
         color: var(--compl-2);
         font-size: 22px;
@@ -185,6 +195,7 @@ div.single-pool {
       justify-content: center;
       a {
         display: inline-block;
+        margin-bottom: 15px;
         &.active {
           background-color: var(--compl-2);
           color: var(--dominant-bmode-color) !important;

@@ -1,6 +1,31 @@
 .farm {
   margin-top: 130px;
   padding-bottom: 50px;
+  button.toggleFarm {
+    padding: 10px;
+    font-size: 18px;
+    background: none;
+    color: var(--compl-2);
+    cursor: pointer;
+    font-weight: bold;
+    text-shadow: 0px 0px 30px var(--compl-2);
+    margin-top: 10px;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    border: 1px solid var(--compl-2);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    @media (min-width: 750px){
+      &{
+        display: none;
+      }
+    }
+  }
   h2 {
     width: fit-content;
     margin-left: auto;
@@ -20,9 +45,15 @@
       padding: 30px 0px;
       border-radius: 85px;
       margin-bottom: 25px;
+      @media (max-width: 750px) {
+        flex-direction: column;
+      }
       div.q {
         position: relative;
-        flex: .6;
+        flex: 0.6;
+        @media (max-width: 750px) {
+          width: 85%;
+        }
       }
       img {
         width: 100%;
@@ -104,8 +135,23 @@
         }
       }
       .a {
-        display: flex;
-        align-items: center;
+        @media (max-width: 750px) {
+          width: 85%;
+          margin-top: 15px;
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          height: 0;
+          pointer-events: none;
+          &.open {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            pointer-events: all;
+            height: fit-content;
+          }
+          transition: clip-path 0.5s ease-in-out;
+          -webkit-transition: clip-path 0.5s ease-in-out;
+          -moz-transition: clip-path 0.5s ease-in-out;
+          -ms-transition: clip-path 0.5s ease-in-out;
+          -o-transition: clip-path 0.5s ease-in-out;
+        }
       }
       .middle {
         display: flex;

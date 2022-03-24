@@ -1,6 +1,13 @@
 section.intro {
   height: 100vh;
   position: relative;
+  @media (max-width:900px) {
+    img{
+      &:not(:first-child){
+        display: none;
+      }
+    }
+  }
   img.overlay {
     width: 100%;
     height: 100%;
@@ -48,6 +55,9 @@ section.intro {
     transform: rotate(-1deg);
   }
   .intro-text {
+    @media (max-width:700px) {
+      padding-left: 20px;
+    }
     position: absolute;
     top: 50%;
     left: 15%;

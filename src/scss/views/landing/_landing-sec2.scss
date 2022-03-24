@@ -1,10 +1,16 @@
 section.about {
   min-height: 100vh;
+  @media (max-width:700px) {
+    padding-top: 0%;
+  }
   h2 {
     margin-top: 30px;
     font-size: 36px;
     color: var(--dominant-wmode-color);
     text-align: center;
+    @media (max-width:700px) {
+      font-size: 20px;
+    }
   }
   main {
     display: flex;

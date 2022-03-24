@@ -8,6 +8,9 @@ section.levels {
       margin-top: 30px;
       font-size: 36px;
       color: var(--dominant-wmode-color);
+      @media (max-width:700px) {
+        font-size: 25px;
+      }
     }
     a{
         font-size: 18px !important;

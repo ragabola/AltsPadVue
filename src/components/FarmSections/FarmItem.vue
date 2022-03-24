@@ -1,11 +1,12 @@
 <template>
   <div class="s-question">
-    <div :class="activeQ" @click="toggle($event)">
+    <div class="q">
       <img class="farm-img" :src="image" alt="" />
       <div class="farm-data">
         <h2 class="farm-header">{{ farmHeader }}</h2>
         <p class="farm-sub-header">{{ farmSubHeader }}</p>
         <p class="desc">{{ farmDesc }}</p>
+
       </div>
       <div class="statics">
         <p>
@@ -24,8 +25,9 @@
           Total Locked <span>{{ total }}</span>
         </p>
       </div>
+      <button @click="toggle($event)" class="toggleFarm" v-if="down">Show More</button>
     </div>
-    <div :class="activeA">
+    <div :class="down == true ? 'a' : 'a open'">
       <div class="middle">
         <div class="first">
           <h3>Deposit</h3>
@@ -45,6 +47,7 @@
           <button disabled>Approve</button>
         </div>
       </div>
+      <button @click="toggle($event)" class="toggleFarm" v-if="!down">Show Less</button>
     </div>
   </div>
 </template>
@@ -73,9 +76,6 @@ export default {
   },
   methods: {
     toggle: function (event) {
-      event.target.classList.toggle("active");
-      event.target.nextElementSibling.classList.toggle("active");
-      this.up = !this.up;
       this.down = !this.down;
     },
   },

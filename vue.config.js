@@ -15,7 +15,7 @@ module.exports = defineConfig({
     config
       .plugin('html')
       .tap(args => {
-        args[0].title = "My Vue App";
+        args[0].title = "AltsPad is a decentralized multi-chain fundraising platform enabling projects to raise capital and promise safety to early stage investors. Stake TrustPad tokens to get priority-access to promising projects.";
         return args;
       })
   }

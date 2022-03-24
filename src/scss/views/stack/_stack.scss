@@ -35,6 +35,9 @@
         &.active {
           color: var(--compl-2);
         }
+        @media (max-width: 700px) {
+          font-size: 20px;
+        }
         text-shadow: 0px 0px 50px;
         margin-bottom: 8px;
         color: var(--comp1-wmode-color);
@@ -95,6 +98,9 @@
           p {
             color: #ffffffe6;
             font-size: 20px;
+            @media (max-width: 600px) {
+              font-size: 18px;
+            }
             span {
               margin-left: 15px;
               color: var(--compl-2);
@@ -120,6 +126,9 @@
             opacity: 0.8;
             font-size: 17px;
           }
+          @media (max-width: 600px) {
+            font-size: 22px;
+          }
         }
       }
     }
@@ -129,11 +138,17 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
     & > div {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      @media (max-width: 700px) {
+        margin-bottom: 15px;
+      }
       label {
         color: var(--compl-2);
         font-size: 20px;
@@ -224,6 +239,9 @@
             -ms-border-radius: 10px;
             -o-border-radius: 10px;
             width: fit-content;
+            @media (max-width: 700px) {
+              font-size: 17px;
+            }
             span {
               margin: 0 15px;
               color: var(--compl-1);
@@ -270,11 +288,21 @@
           width: -webkit-fit-content;
           width: -moz-fit-content;
           width: fit-content;
+          @media (max-width: 700px) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+          }
           & > span {
             margin: 0 10px;
             color: var(--compl-2);
             font-weight: 500;
             font-size: 21px;
+            @media (max-width: 700px) {
+              margin-bottom: 15px;
+              display: flex;
+              justify-content: space-between;
+            }
             .sp {
               color: var(--compl-1);
               margin-left: 10px;

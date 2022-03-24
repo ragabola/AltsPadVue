@@ -8,6 +8,9 @@ div.pools {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 700px) {
+          flex-direction: column;
+        }
         div {
           &:first-child {
             a.active {
@@ -23,13 +26,16 @@ div.pools {
               outline: 2px solid var(--compl-2);
               padding: 12px 55px;
               font-size: 16px;
-              border-radius: 11px;
+              border-radius: 33px;
               color: var(--dominant-wmode-color);
-              -webkit-border-radius: 11px;
-              -moz-border-radius: 11px;
-              -ms-border-radius: 11px;
-              -o-border-radius: 11px;
+              -webkit-border-radius: 33px;
+              -moz-border-radius: 33px;
+              -ms-border-radius: 33px;
+              -o-border-radius: 33px;
               font-weight: 500;
+              @media (max-width: 700px) {
+                margin-top: 30px;
+              }
               &::placeholder {
                 color: var(--compl-2);
                 font-weight: bold;
@@ -44,6 +50,13 @@ div.pools {
               left: 5px;
               top: 50%;
               transform: translateY(-50%);
+              -webkit-transform: translateY(-50%);
+              -moz-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              -o-transform: translateY(-50%);
+              @media (max-width: 700px) {
+                top: 70%;
+              }
             }
           }
         }
