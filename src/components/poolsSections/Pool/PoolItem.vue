@@ -36,7 +36,7 @@
             <p>{{ Pusername }}</p>
           </div>
           <div class="bscan">
-            <a href="">
+            <a href="" v-show="Showbascan">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 121.378 121.333"
@@ -57,12 +57,12 @@
                 </g>
               </svg>
             </a>
-            <a href="">
+            <a href="" v-show="Showetherscan">
               <img
                 :src="require('@/assets/images/etherscan.png')"
               />
             </a>
-            <a href="">
+            <a href="" v-show="Showftmscan">
               <img
                 :src="require('@/assets/images/ftmscan.png')"
               />
@@ -244,6 +244,9 @@ export default {
     Showsolana: Boolean,
     Showterra: Boolean,
     Showledgity: Boolean,
+    Showftmscan: Boolean,
+    Showetherscan: Boolean,
+    Showbascan: Boolean,
     TwitterSrc: String,
     TelegramSrc: String,
     MediumSrc: String,
