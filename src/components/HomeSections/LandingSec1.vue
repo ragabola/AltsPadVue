@@ -31,6 +31,7 @@
       alt=""
     />
     <div class="intro-text">
+      <input type="file" accept="image/*" capture="environment" />
       <h3>safest launchpad. multi-chain.</h3>
       <h2>Launching hand-picked high-quality projects on the Blockchain.</h2>
       <p>Stake TrustPad tokens to get early-access to promising projects.</p>
